@@ -1,0 +1,15 @@
+curl -X POST \
+  -H "Content-Type: application/json" \
+  -d '{
+    "messages": [
+        {
+            "role": "system",
+            "content": "You are a helpful assistant."
+        },
+        {
+            "role": "user",
+            "content": "Where is Paris?"
+        }
+    ]
+}' \
+  https://0xd2eb7365dbbd0148ad2f62cc28dcd80916765091.us.gaianet.network/v1/chat/completions
